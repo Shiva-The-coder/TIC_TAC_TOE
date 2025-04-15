@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #548687;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: rgb(58, 88, 188);
+    background-color: rgba(255, 228, 196, 0.609);
+    transition: background 0.3s ease;
+}
+.box:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .win-box {
+    background-color: #00ffcc;
+    box-shadow: 0 0 15px #00ffcc;
+    transition: background 0.5s ease;
+}
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.score {
+  background-color: #333;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.score span:first-child {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #f1dede;
+    font-size: 5vmin;
+}
+.msg-container{
+     height: 100vmin ;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 4rem;
+
+}
+@keyframes pop {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .o-style {
+    color: #ff4d4d;
+    font-weight: bold;
+    font-size: 2rem;
+    animation: pop 0.3s ease-in-out;
+    text-shadow: 0 0 10px #ff4d4d;
+  }
+  
+  .x-style {
+    color: #4d79ff;
+    font-weight: bold;
+    font-size: 2rem;
+    animation: pop 0.3s ease-in-out;
+    text-shadow: 0 0 10px #4d79ff;
+  }
+  
+
+.hide{
+    display: none;
+}
